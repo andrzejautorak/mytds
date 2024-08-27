@@ -5,9 +5,9 @@ const { loggedIn } = useUserSession()
 <template>
   <UCard>
     <template #header>
-      <h3 class="text-lg font-semibold leading-6">
-        Todo List
-      </h3>
+      <h2 class="text-lg font-semibold leading-6 text-lime-500">
+        Lista do zrobienia
+      </h2>
       <UButton
         v-if="!loggedIn"
         to="/api/auth/github"
